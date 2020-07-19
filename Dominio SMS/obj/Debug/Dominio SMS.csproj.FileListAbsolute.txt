@@ -1,0 +1,11 @@
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\bin\Debug\Dominio SMS.exe.config
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\bin\Debug\Dominio SMS.exe
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\bin\Debug\Dominio SMS.pdb
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.csprojAssemblyReference.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio_SMS.Form1.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio_SMS.Properties.Resources.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.csproj.GenerateResource.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.csproj.CoreCompileInputs.cache
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.exe
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.pdb
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio_SMS.Configuraciones.resources
