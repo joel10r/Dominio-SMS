@@ -79,7 +79,7 @@ namespace Dominio_SMS
           
          Clipboard.SetText(dataGridView1.Rows[dataGridView1.CurrentRow.Index]
              .Cells[0].Value.ToString());
-
+               notifyIcon1.ShowBalloonTip(100, "Alerta", "Número Copiado", ToolTipIcon.Info);
         }
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
