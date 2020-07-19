@@ -5,5 +5,8 @@
     <Setting Name="Dominio" Type="System.String" Scope="User">
       <Value Profile="(Default)">@icecr.com</Value>
     </Setting>
+    <Setting Name="Notificacion" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

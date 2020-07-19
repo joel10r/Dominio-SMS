@@ -9,3 +9,8 @@ C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio 
 C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.exe
 C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.pdb
 C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio_SMS.Configuraciones.resources
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\bin\Debug\Dominio SMS.exe.manifest
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\bin\Debug\Dominio SMS.application
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.exe.manifest
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio SMS.application
+C:\Users\joel1\OneDrive\C#\Portafolio\Dominio SMS\Dominio SMS\obj\Debug\Dominio_SMS.Notificaciones.resources

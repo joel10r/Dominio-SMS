@@ -32,18 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnBuscarArchivo = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Números = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ficheroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Números = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.configuracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCopiar = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ocultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cambiarDominioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -71,6 +73,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(210, 390);
             this.dataGridView1.TabIndex = 3;
             // 
+            // Números
+            // 
+            this.Números.HeaderText = "Números";
+            this.Números.Name = "Números";
+            this.Números.Width = 120;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -91,30 +99,27 @@
             this.cargarToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.cargarToolStripMenuItem.Text = "Cargar";
             // 
-            // configuracionesToolStripMenuItem
-            // 
-            this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
-            this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.configuracionesToolStripMenuItem.Text = "Configuraciones";
-            this.configuracionesToolStripMenuItem.Click += new System.EventHandler(this.configuracionesToolStripMenuItem_Click);
-            // 
             // ficheroToolStripMenuItem
             // 
             this.ficheroToolStripMenuItem.Name = "ficheroToolStripMenuItem";
-            this.ficheroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ficheroToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.ficheroToolStripMenuItem.Text = "Fichero";
             // 
             // manualToolStripMenuItem
             // 
             this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
-            this.manualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.manualToolStripMenuItem.Text = "Manual";
             // 
-            // Números
+            // configuracionesToolStripMenuItem
             // 
-            this.Números.HeaderText = "Números";
-            this.Números.Name = "Números";
-            this.Números.Width = 120;
+            this.configuracionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cambiarDominioToolStripMenuItem,
+            this.notificacionesToolStripMenuItem});
+            this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
+            this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.configuracionesToolStripMenuItem.Text = "Configuraciones";
+            this.configuracionesToolStripMenuItem.Click += new System.EventHandler(this.configuracionesToolStripMenuItem_Click);
             // 
             // btnLimpiar
             // 
@@ -142,7 +147,21 @@
             this.mostrarToolStripMenuItem,
             this.ocultarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(116, 48);
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
+            // 
+            // ocultarToolStripMenuItem
+            // 
+            this.ocultarToolStripMenuItem.Name = "ocultarToolStripMenuItem";
+            this.ocultarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.ocultarToolStripMenuItem.Text = "Ocultar";
+            this.ocultarToolStripMenuItem.Click += new System.EventHandler(this.ocultarToolStripMenuItem_Click);
             // 
             // notifyIcon1
             // 
@@ -151,19 +170,19 @@
             this.notifyIcon1.Text = "Dominio SMS";
             this.notifyIcon1.Visible = true;
             // 
-            // mostrarToolStripMenuItem
+            // cambiarDominioToolStripMenuItem
             // 
-            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mostrarToolStripMenuItem.Text = "Mostrar";
-            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
+            this.cambiarDominioToolStripMenuItem.Name = "cambiarDominioToolStripMenuItem";
+            this.cambiarDominioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cambiarDominioToolStripMenuItem.Text = "Cambiar Dominio";
+            this.cambiarDominioToolStripMenuItem.Click += new System.EventHandler(this.cambiarDominioToolStripMenuItem_Click);
             // 
-            // ocultarToolStripMenuItem
+            // notificacionesToolStripMenuItem
             // 
-            this.ocultarToolStripMenuItem.Name = "ocultarToolStripMenuItem";
-            this.ocultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ocultarToolStripMenuItem.Text = "Ocultar";
-            this.ocultarToolStripMenuItem.Click += new System.EventHandler(this.ocultarToolStripMenuItem_Click);
+            this.notificacionesToolStripMenuItem.Name = "notificacionesToolStripMenuItem";
+            this.notificacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.notificacionesToolStripMenuItem.Text = "Notificaciones";
+            this.notificacionesToolStripMenuItem.Click += new System.EventHandler(this.notificacionesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -206,6 +225,8 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ocultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarDominioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notificacionesToolStripMenuItem;
     }
 }
 

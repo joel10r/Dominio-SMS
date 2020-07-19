@@ -16,6 +16,7 @@ namespace Dominio_SMS
     public partial class Form1 : Form
     {
         private string dominio;
+        private bool estado;
         public Form1()
         {
             InitializeComponent();
@@ -54,19 +55,24 @@ namespace Dominio_SMS
 
         private void configuracionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Configuraciones conf = new Configuraciones();
-            conf.ShowDialog();
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
              dominio = RefrescarDominio();
+             estado = RefrescarNotificacion();
         }
 
         #region RefrescarDominio
         private string RefrescarDominio()
            => dominio = (string)Settings.Default["Dominio"];
 
+        #endregion
+
+        #region
+        private bool RefrescarNotificacion()
+           => estado = (bool) Settings.Default["Notificacion"];
         #endregion
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -76,10 +82,26 @@ namespace Dominio_SMS
 
         private void btnCopiar_Click(object sender, EventArgs e)
         {
-          
-         Clipboard.SetText(dataGridView1.Rows[dataGridView1.CurrentRow.Index]
-             .Cells[0].Value.ToString());
-               notifyIcon1.ShowBalloonTip(100, "Alerta", "Número Copiado", ToolTipIcon.Info);
+
+            string numeroCopiado;
+
+            try
+            {
+                numeroCopiado = dataGridView1.Rows[dataGridView1.CurrentRow.Index]
+                    .Cells[0].Value.ToString();
+                Clipboard.SetText(numeroCopiado);
+
+                if(RefrescarNotificacion())
+                    notifyIcon1.ShowBalloonTip(100, "Alerta", 
+                        $"Número {numeroCopiado} Copiado", ToolTipIcon.Info);
+              
+            }
+            catch
+            {
+                 
+                MessageBox.Show($"Error al copiar",
+                                    "Portapapeles", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +112,18 @@ namespace Dominio_SMS
         private void ocultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void cambiarDominioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Configuraciones conf = new Configuraciones();
+            conf.ShowDialog();
+        }
+
+        private void notificacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Notificaciones not = new Notificaciones();
+            not.ShowDialog();
         }
     }
 }
