@@ -25,10 +25,19 @@ namespace Dominio_SMS
 
         private void btnModificarDominio_Click(object sender, EventArgs e)
         {
-            Settings.Default.Dominio = txtDominio.Text.Trim().ToLower();
-            Settings.Default.Save();
-            txtDominio.Text = string.Empty;
-            txtDominioActual.Text = Settings.Default.Dominio;
+            if (txtDominio.Text != string.Empty)
+            {
+                Settings.Default.Dominio = txtDominio.Text.Trim().ToLower();
+                Settings.Default.Save();
+                txtDominio.Text = string.Empty;
+                txtDominioActual.Text = Settings.Default.Dominio;
+            }
+            else
+            {
+                MessageBox.Show("Nuevo Dominio es un campo requerido",
+                            "Modicar Dominio",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+          
           
         }
     }

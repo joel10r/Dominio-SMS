@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuraciones));
             this.btnModificarDominio = new System.Windows.Forms.Button();
             this.txtDominio = new System.Windows.Forms.TextBox();
             this.lblDominio = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@
             this.btnModificarDominio.Location = new System.Drawing.Point(173, 114);
             this.btnModificarDominio.Name = "btnModificarDominio";
             this.btnModificarDominio.Size = new System.Drawing.Size(102, 23);
-            this.btnModificarDominio.TabIndex = 0;
+            this.btnModificarDominio.TabIndex = 1;
             this.btnModificarDominio.Text = "Modificar Dominio";
             this.btnModificarDominio.UseVisualStyleBackColor = true;
             this.btnModificarDominio.Click += new System.EventHandler(this.btnModificarDominio_Click);
@@ -50,7 +51,7 @@
             this.txtDominio.Location = new System.Drawing.Point(173, 73);
             this.txtDominio.Name = "txtDominio";
             this.txtDominio.Size = new System.Drawing.Size(100, 20);
-            this.txtDominio.TabIndex = 1;
+            this.txtDominio.TabIndex = 0;
             // 
             // lblDominio
             // 
@@ -78,7 +79,7 @@
             this.txtDominioActual.Name = "txtDominioActual";
             this.txtDominioActual.ReadOnly = true;
             this.txtDominioActual.Size = new System.Drawing.Size(100, 20);
-            this.txtDominioActual.TabIndex = 3;
+            this.txtDominioActual.TabIndex = 2;
             // 
             // Configuraciones
             // 
@@ -90,7 +91,9 @@
             this.Controls.Add(this.lblDominio);
             this.Controls.Add(this.txtDominio);
             this.Controls.Add(this.btnModificarDominio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Configuraciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuraciones";
             this.Load += new System.EventHandler(this.Configuraciones_Load);
             this.ResumeLayout(false);

@@ -66,7 +66,30 @@ namespace Dominio_SMS
         #region RefrescarDominio
         private string RefrescarDominio()
            => dominio = (string)Settings.Default["Dominio"];
-        
-        #endregion 
+
+        #endregion
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+        }
+
+        private void btnCopiar_Click(object sender, EventArgs e)
+        {
+          
+         Clipboard.SetText(dataGridView1.Rows[dataGridView1.CurrentRow.Index]
+             .Cells[0].Value.ToString());
+
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void ocultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
